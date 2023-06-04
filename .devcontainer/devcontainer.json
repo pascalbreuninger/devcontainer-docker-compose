@@ -1,0 +1,7 @@
+{
+  "name": "Example Docker Compose Devcontainer",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "settings": {},
+  "extensions": []
+}
