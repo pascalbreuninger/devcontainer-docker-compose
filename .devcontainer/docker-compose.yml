@@ -6,6 +6,10 @@ services:
       context: ../
       dockerfile: .devcontainer/Dockerfile
 
-  another-service:
-    image: mongo:latest
+  db:
+    image: postgres:latest
     restart: unless-stopped
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+volumes:
+  postgres-data:
